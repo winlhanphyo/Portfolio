@@ -383,8 +383,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1522075469751-3847093d9d40?w=800&h=600&fit=crop"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite", "React Router", "React Icons"],
-    githubUrl: "https://github.com/winlhanphyo/portfolio",
-    liveUrl: "https://winlhanphyo.vercel.app",
+    githubUrl: "https://github.com/winlhanphyo/Portfolio",
+    liveUrl: "https://portfolio-zeta-blush-34.vercel.app/project/9",
     featured: false,
     category: "Portfolio",
     challenges: [
