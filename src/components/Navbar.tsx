@@ -107,23 +107,27 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <motion.div
-          initial={false}
-          animate={{ height: isOpen ? 'auto' : 0 }}
-          className="md:hidden overflow-hidden bg-white/95 backdrop-blur-md rounded-lg mt-2"
-        >
-          <div className="py-4 space-y-2">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollToSection(link.href)}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
-              >
-                {link.label}
-              </button>
-            ))}
-          </div>
-        </motion.div>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg"
+          >
+            <div className="py-4 space-y-2">
+              {navLinks.map((link) => (
+                <button
+                  key={link.href}
+                  onClick={() => scrollToSection(link.href)}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-300"
+                >
+                  {link.label}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
     </motion.nav>
   )

@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
                 {/* Overlay gradient for better text contrast */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent rounded-b-xl"></div>
               </div>
             </div>
             {/* Decorative elements */}
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
             </button>
 
             <a
-              href="/resume.pdf"
+              href="/file/WinLhanPhyo.pdf"
               download
               className="btn-secondary flex items-center gap-2"
             >
