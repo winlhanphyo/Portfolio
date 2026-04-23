@@ -49,13 +49,13 @@ const Contact: React.FC = () => {
     {
       icon: HiPhone,
       title: "Phone",
-      value: "+66991719447",
-      link: "tel:+66991719447"
+      value: "+959964764462",
+      link: "tel:+959964764462"
     },
     {
       icon: HiLocationMarker,
       title: "Location",
-      value: "Thailand",
+      value: "Myanmar",
       link: "#"
     }
   ]
